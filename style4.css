@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(to right, white, rgb(248, 206, 255));
+}
+
+.navbar {
+    position: fixed;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(121, 36, 201);
+    width: 100%;
+    height: 45px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar>svg {
+    margin-left: 3%;
+    margin-right: 4%;
+    color: white;
+}
+
+.navbar>a {
+    margin-right: 3%;
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.navbar>a:hover,
+.navbar>.active {
+    color: burlywood;
+}
+
+.navbar>.RS,
+.navbar>.RS1 {
+    margin-right: 2%;
+    text-align: center;
+}
+
+.navbar>.RS1 {
+    margin-left: 40%;
+}
+
+/*tooltip*/
+.RS,
+.RS1 {
+    position: relative;
+    display: inline-block;
+}
+
+.RS .tooltiptext,
+.RS1 .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 100%;
+    margin-left: -60px;
+}
+
+.RS:hover .tooltiptext,
+.RS1:hover .tooltiptext {
+    visibility: visible;
+    z-index: 1;
+}
+
+/*tooltip*/
+.row {
+    display: flex;
+    margin-left: 4%;
+    margin-right: 2%;
+}
+
+.info {
+    flex: 50%;
+    margin-top: 5%;
+    font-size: 25px;
+    margin-right: 2%;
+}
+
+.under {
+    column-count: 2;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.ima {
+    flex: 25%;
+}
+
+.ima div {
+    padding-top: 3%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.but {
+    text-align: center;
+}
+
+button {
+    margin-left: 5%;
+    height: 50px;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgb(121, 36, 201);
+    border-color: blueviolet;
+    z-index: -1;
+    margin-top: 70px;
+
+
+}
+
+button>a {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+button:hover {
+    border: 2px solid rgb(121, 36, 201);
+    background-color: rgb(155, 59, 245);
+    border-color: (0, 0, 0, 0.5);
+
+}
+
+/*responsive site*/
+@media screen and (max-width: 700px) {
+    .navbar>a {
+        font-size: 19px;
+    }
+
+    .navbar>.RS,
+    .navbar>.RS1 {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+
+    .navbar>.RS1 {
+        margin-left: 5%;
+    }
+
+    .row>.ima {
+        flex: 15%;
+
+    }
+
+    .row>.ima>div {
+        padding-top: 5%;
+    }
+
+    .info>.ima>div {
+        margin-top: 30px;
+    }
+
+    .row>.info>.but>button {
+        margin-top: 30px;
+        width: 110px;
+        height: 40px;
+        margin-left: 0px;
+    }
+
+
+
+    .center>.pagination {
+        margin-top: 35px;
+    }
+}
+
+/*pagiantion*/
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 9%;
+
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.pagination a:hover {
+    background-color: darkgray;
+
+}
+
+.pagination a.active {
+    background-color: rgb(121, 36, 201);
+    color: white;
+}
+
+/*pagiantion*/
